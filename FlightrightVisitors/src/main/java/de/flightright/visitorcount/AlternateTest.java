@@ -8,7 +8,7 @@ import java.util.List;
 
 import de.flightright.visitorcount.pojo.Users;
 
-public class Test {
+public class AlternateTest {
 	public static void main(String[] args) {
 		String line = "";
 		String splitBy = ",";

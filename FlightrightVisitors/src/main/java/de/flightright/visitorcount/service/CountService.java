@@ -41,6 +41,7 @@ public class CountService {
 		return usersList.size();
 	}
 
+	//Alternate method
 	public int readCount(File visitorfile) {
 		String line = "";
 		String splitBy = ",";

@@ -33,7 +33,7 @@ public class VisitorsController {
 		return "visitorcount";
 	}
 
-	@GetMapping("/viewVisitorCount") // If we want to see output by fetching the CSV inside application, then use /viewVisitorCount.
+	@GetMapping("/viewVisitorCount") // Alternatively,if we want to see output by fetching the CSV inside application, then use /viewVisitorCount.
 	public ModelAndView viewVisitorCount(Model model) {
 		try {
 			ClassLoader classLoader = getClass().getClassLoader();
