@@ -1,14 +1,15 @@
 package de.flightright.visitorcount;
 
 import java.io.BufferedReader;
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 import de.flightright.visitorcount.pojo.Users;
 
-public class AlternateTest {
+//Alternate main application
+public class Test {
 	public static void main(String[] args) {
 		String line = "";
 		String splitBy = ",";
@@ -22,12 +23,11 @@ public class AlternateTest {
 			BufferedReader br = new BufferedReader(new FileReader(args[0]));
 			List<Users> usersList = new ArrayList<>();
 			line = br.readLine();
-			while ((line = br.readLine()) != null) 
-			{
+			while ((line = br.readLine()) != null) {
 				String[] employee = line.split(splitBy);
 				if (!isNullOrEmpty(employee[0]) && !isNullOrEmpty(employee[1]) && !isNullOrEmpty(employee[2])) {
 					Users users = new Users();
-					users.setEmail(employee[0]);
+					users.setEmail(employee[0]); 
 					users.setPhone(employee[1]);
 					users.setSource(employee[2]);
 					if (!checkDuplicate(usersList, users))
