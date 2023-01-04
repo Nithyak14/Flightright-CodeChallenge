@@ -1,14 +1,7 @@
 package de.flightright.visitorcount.controller;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.net.URL;
-
-import org.apache.tomcat.util.http.fileupload.disk.DiskFileItem;
-import org.eclipse.jdt.internal.compiler.batch.FileSystem.Classpath;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
